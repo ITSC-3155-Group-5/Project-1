@@ -1,1 +1,35 @@
 
+body{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:50px;
+}
+@keyframes pulsate {
+    100%{
+      text-shadow:
+      0 0 7px rgb(0,255,0),
+      0 0 14px rgb(0,255,0),
+      0 0 17px rgb(0,255,0),
+      0 0 24px rgb(0,255,0),
+      0 0 34px rgb(0,255,0);
+    }
+    
+  }
+  .glow{
+    box-shadow: 0 0 3px 3px rgb(9, 255, 0);
+    animation:pulsate 1.5s infinite alternate;
+  }
+  .box{
+    background-color: aliceblue;
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+  }
+p{
+    margin: auto;
+}
